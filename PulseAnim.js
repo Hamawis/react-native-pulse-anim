@@ -3,7 +3,7 @@ import { View, Image, TouchableOpacity, Animated, Easing } from 'react-native';
 import Pulse from './Pulse';
 
 
-export default class PulseAnimation extends React.Component {
+export default class PulseAnim extends React.Component {
 	constructor(props) {
 		super(props);
 	
@@ -105,7 +105,7 @@ export default class PulseAnimation extends React.Component {
 //   getStyle: React.PropTypes.func,
 // };
 
-PulseAnimation.defaultProps = {
+PulseAnim.defaultProps = {
   interval: 2000,
   size: 100,
   pulseMaxSize: 200,

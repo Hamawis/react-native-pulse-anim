@@ -14,7 +14,7 @@ npm i react-native-pulse-animation --save
 
 ```js
 import React from 'react';
-import PulseAnimation from 'react-native-pulse-animation';
+import PulseAnim from 'react-native-pulse-anim';
 
 class App extends React.Component {
   render() {
