@@ -1,6 +1,6 @@
 {
   "name": "react-native-pulse-anim",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "<h1 align=\"center\">Pulse Animation for React Native</h1> <p align=\"center\">tinder-like loader for your react native app</p>",
   "main": "Pulse.js",
   "scripts": {

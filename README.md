@@ -1,5 +1,5 @@
 <h1 align="center">Pulse Animation for React Native</h1>
-<p align="center">tinder-like loader for your react native app (Android & iOS)</p>
+<p align="center">tinder-like pulse animation for your react native app (works on Android & iOS)</p>
 
 <p align="center">
   <img src="http://i.giphy.com/l0MYz2cMbOryuyPZu.gif" />
@@ -11,9 +11,10 @@ npm i react-native-pulse-animation --save
 ```
 
 ### ToDo
+```bash
 [] uncomment & fix the onPress event to work cross platform
 [] refactor some code
-
+```
 
 ### Example
 
