@@ -1,4 +1,4 @@
-<h1 align="center">Pulse Loader for React Native</h1>
+<h1 align="center">Pulse Animation for React Native</h1>
 <p align="center">tinder-like loader for your react native app</p>
 
 <p align="center">
@@ -7,19 +7,19 @@
 
 ### Installation
 ```bash
-npm i react-native-pulse-loader --save
+npm i react-native-pulse-animation --save
 ```
 
 ### Example
 
 ```js
 import React from 'react';
-import PulseLoader from 'react-native-pulse-loader';
+import PulseAnimation from 'react-native-pulse-animation';
 
 class App extends React.Component {
   render() {
     return (
-      <PulseLoader
+      <PulseAnim
         avatar={'https://scontent-fra3-1.cdninstagram.com/t51.2885-15/e35/11429705_386886401514376_550879228_n.jpg'}
       />
     );
