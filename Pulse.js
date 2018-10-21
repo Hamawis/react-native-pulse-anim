@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		alignItems: 'center',
 		position: 'absolute',
-		left: width/2,
-		top: height/2,
+		// left: width/8,
+		// top: height/2,
 	},
 	circle: {
 		borderWidth: 4 * StyleSheet.hairlineWidth,

@@ -3,7 +3,7 @@ import { View, Image, TouchableOpacity, Animated, Easing } from 'react-native';
 import Pulse from './Pulse';
 
 
-export default class LocationPulseLoader extends React.Component {
+export default class PulseAnimation extends React.Component {
 	constructor(props) {
 		super(props);
 	
@@ -18,6 +18,10 @@ export default class LocationPulseLoader extends React.Component {
 
 	componentDidMount() {
 		this.setCircleInterval();
+	}
+
+	componentWillUnmount() {
+		clearInterval(this.setInterval);
 	}
 
 	setCircleInterval() {
@@ -65,8 +69,8 @@ export default class LocationPulseLoader extends React.Component {
 
 				<TouchableOpacity
 					activeOpacity={1}
-					onPressIn={this.onPressIn.bind(this)}
-					onPressOut={this.onPressOut.bind(this)}
+					// onPressIn={this.onPressIn.bind(this)}
+					// onPressOut={this.onPressOut.bind(this)}
 					style={{
 						transform: [{
 							scale: this.anim
@@ -88,31 +92,31 @@ export default class LocationPulseLoader extends React.Component {
 	}	
 }
 
-LocationPulseLoader.propTypes = {
-  interval: React.PropTypes.number,
-  size: React.PropTypes.number,
-  pulseMaxSize: React.PropTypes.number,
-  avatar: React.PropTypes.string.isRequired,
-  avatarBackgroundColor: React.PropTypes.string,
-  pressInValue: React.PropTypes.number,
-  pressDuration: React.PropTypes.number,
-  borderColor: React.PropTypes.string,
-  backgroundColor: React.PropTypes.string,
-  getStyle: React.PropTypes.func,
-};
+// LocationPulseLoader.propTypes = {
+//   interval: React.PropTypes.number,
+//   size: React.PropTypes.number,
+//   pulseMaxSize: React.PropTypes.number,
+//   avatar: React.PropTypes.string.isRequired,
+//   avatarBackgroundColor: React.PropTypes.string,
+//   pressInValue: React.PropTypes.number,
+//   pressDuration: React.PropTypes.number,
+//   borderColor: React.PropTypes.string,
+//   backgroundColor: React.PropTypes.string,
+//   getStyle: React.PropTypes.func,
+// };
 
-LocationPulseLoader.defaultProps = {
+PulseAnimation.defaultProps = {
   interval: 2000,
   size: 100,
-  pulseMaxSize: 250,
+  pulseMaxSize: 200,
   avatar: undefined,
   avatarBackgroundColor: 'white',
   pressInValue: 0.8,
   pressDuration: 150,
   pressInEasing: Easing.in,
   pressOutEasing: Easing.in,
-  borderColor: '#D8335B',
-  backgroundColor: '#ED225B55',
+  borderColor: '#1c1d1f',
+  backgroundColor: '#D1D1D1',
   getStyle: undefined,
 };
 
