@@ -1,8 +1,8 @@
 {
   "name": "react-native-pulse-anim",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "<h1 align=\"center\">Pulse Animation for React Native</h1> <p align=\"center\">tinder-like loader for your react native app</p>",
-  "main": "Pulse.js",
+  "main": "PulseAnim.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +13,6 @@
   "keywords": [],
   "author": "Wissile Sogoyou",
   "license": "MIT",
-  "main": "PulseAnim.js",
   "peerDependencies": {
     "react-native": "^0.27"
   },
