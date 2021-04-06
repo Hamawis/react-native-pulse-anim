@@ -55,7 +55,6 @@ export default class PulseAnim extends React.Component {
 
 		return (
 			<View style={{
-				flex: 1,
 				backgroundColor: 'transparent',
 				justifyContent: 'center',
 				alignItems: 'center',
@@ -66,17 +65,6 @@ export default class PulseAnim extends React.Component {
 						{...this.props}
 					/>
 				))}
-
-				<TouchableOpacity
-					activeOpacity={1}
-					// onPressIn={this.onPressIn.bind(this)}
-					// onPressOut={this.onPressOut.bind(this)}
-					style={{
-						transform: [{
-							scale: this.anim
-						}]
-					}}
-				>
 					<Image
 						source={{ uri: avatar }}
 						style={{
@@ -86,24 +74,11 @@ export default class PulseAnim extends React.Component {
 							backgroundColor: avatarBackgroundColor
 						}}
 					/>
-				</TouchableOpacity>
 			</View>
 		);
 	}	
 }
 
-// LocationPulseLoader.propTypes = {
-//   interval: React.PropTypes.number,
-//   size: React.PropTypes.number,
-//   pulseMaxSize: React.PropTypes.number,
-//   avatar: React.PropTypes.string.isRequired,
-//   avatarBackgroundColor: React.PropTypes.string,
-//   pressInValue: React.PropTypes.number,
-//   pressDuration: React.PropTypes.number,
-//   borderColor: React.PropTypes.string,
-//   backgroundColor: React.PropTypes.string,
-//   getStyle: React.PropTypes.func,
-// };
 
 PulseAnim.defaultProps = {
   interval: 2000,
