@@ -34,22 +34,6 @@ export default class PulseAnim extends React.Component {
 		this.counter++;
 	}
 
-	onPressIn() {
-		Animated.timing(this.anim, {
-			toValue: this.props.pressInValue,
-			duration: this.props.pressDuration,
-			easing: this.props.pressInEasing,
-		}).start(() => clearInterval(this.setInterval));
-	}
-
-	onPressOut() {
-		Animated.timing(this.anim, {
-			toValue: 1,
-			duration: this.props.pressDuration,
-			easing: this.props.pressOutEasing,
-		}).start(this.setCircleInterval.bind(this));
-	}
-
 	render() {
 		const { size, avatar, avatarBackgroundColor, interval } = this.props;
 
