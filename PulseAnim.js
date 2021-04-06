@@ -35,7 +35,7 @@ export default class PulseAnim extends React.Component {
 	}
 
 	render() {
-		const { size, avatar, avatarBackgroundColor, interval } = this.props;
+		const { size, avatar, avatarBackgroundColor, interval, imageDefaultSource } = this.props;
 
 		return (
 			<View style={{
@@ -50,13 +50,14 @@ export default class PulseAnim extends React.Component {
 					/>
 				))}
 					<Image
-						source={{ uri: avatar }}
+						source={avatar}
 						style={{
 							width: size,
 							height: size,
 							borderRadius: size/2,
 							backgroundColor: avatarBackgroundColor
 						}}
+						defaultSource={imageDefaultSource}
 					/>
 			</View>
 		);
